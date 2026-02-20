@@ -1,15 +1,15 @@
 # Sales Call Copilot
 
-A RAG-based CLI chatbot that ingests sales call transcripts, stores them in a persistent Chroma vector database, and provides intelligent querying, summarization, and insight extraction all with mandatory source citations.
+A RAG based CLI chatbot that ingests sales call transcripts, stores them in a persistent Chroma vector database, and provides intelligent querying, summarization, and insight extraction all with mandatory source citations.
 
 ## Features
 
 - Ingest `.txt` transcript files into a persistent vector store
 - Semantic search across all ingested calls
 - Summarize individual calls or the most recent call
-- Free-form natural language queries with RAG
+- Free form natural language queries with RAG
 - Source citations on every response
-- Rich-formatted CLI with tables, panels, and color
+- Rich formatted CLI with tables, panels, and color
 
 ## Prerequisites
 
@@ -125,18 +125,3 @@ sales-call-copilot/
 - The OpenAI `text-embedding-3-small` model is used for embeddings
 - All LLM responses are grounded in retrieved context with source citations
 
-## Sample Data
-
-Three sample transcripts are included in `data/` for testing:
-
-- `sample_discovery_call.txt` — Initial discovery call with a prospect
-- `sample_pricing_negotiation.txt` — Pricing discussion and negotiation
-- `sample_objection_handling.txt` — Handling customer objections
-
-## Running Tests
-
-```bash
-pytest
-```
-
-Property-based tests use [Hypothesis](https://hypothesis.readthedocs.io/) with a minimum of 100 iterations per property.
