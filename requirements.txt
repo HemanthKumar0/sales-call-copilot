@@ -1,0 +1,12 @@
+langchain
+langchain-text-splitters
+langchain-openai
+langchain-chroma
+chromadb
+openai
+pydantic
+pydantic-settings
+python-dotenv
+rich
+hypothesis
+pytest
